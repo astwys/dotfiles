@@ -15,10 +15,18 @@ echo "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+echo "Creatign symlink for gitconfig file"
+ln -s $dir/git/.gitconfig ~/
+echo "done"
+
+echo "Creating symlink for alias file"
+ln -s $dir/.aliases ~/
+echo "done"
+
 # create symlink for the aliases file for oh-my-zsh
 echo  "Creating symlinks for zgen"
   echo "Creating symlink for zshrc file"
-  ln -s $dir/zsh/.zshrc ~/.zshrc
+  ln -s $dir/zsh/.zshrc ~/
   echo "done"
 
 

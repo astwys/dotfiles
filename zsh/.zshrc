@@ -1,7 +1,7 @@
 #load zgen
 source ~/zgen/zgen.zsh
 
-source ~/zgen_custom/aliases
+source ~/.aliases
 source ~/zgen_custom/zsh-autosuggestions/dist/autosuggestions.zsh
 
 #check if there is no init script
