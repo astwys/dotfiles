@@ -2,3 +2,9 @@
 [user]
 	name = astwys
 	email = astwys@gmail.com
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[core]
+	editor = emacs
