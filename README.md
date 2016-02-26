@@ -1,5 +1,7 @@
 # dotfiles
 
+<a href="http://astwys.github.io/dotfiles/">http://astwys.github.io/dotfiles/</a>
+
 1. import iterm2 color scheme
 2. ``brew install zsh`` to install zsh
 3. ``chsh -s $(which zsh)`` to change to zsh as default shell
