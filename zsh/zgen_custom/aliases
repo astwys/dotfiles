@@ -4,7 +4,7 @@
 #git commands
   alias gs="git status"
   alias ga="git add ."
-  alias gcm="git commit -am"
+  alias gcm="git commit -m"
   alias gu="git up"
   alias yolo="git commit -am '`curl -s http://whatthecommit.com/index.txt`'"
 
