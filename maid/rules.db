@@ -1,0 +1,65 @@
+Maid.rules do
+	#move all compressed files and images to a specified folder
+	watch '~/Downloads' do
+		rule 'compressed' do
+			move(dir('~/Downloads/*.(zip|dmg|pkg)'), '~/Downloads/compressed')
+		end
+
+		rule 'images' do
+			move(dir('~/Downloads(*.(jpg|jpeg|png)'), '~/Downloads/images')
+		end
+	end
+
+	#move screenshots to a folder
+	watch '~/Desktop' do
+		rule 'screenshots' do
+			move(dir('~/Desktop/Screen Shot*'), '~/Desktop/Screenshots')
+		end
+	end
+
+	#move old screenshots to the ~/Documents folder
+	rule 'misc screenshots' do
+		dir('~/Desktop/Screenshots') do |path|
+			if 1.week.since?(created_at(path))
+				move(path'/*', '~/Documents/Misc_Screenshots')
+			end
+		end
+	end
+
+	#trash empty directories from the ~/Downloads folder
+	rule 'Remove empty directories' do
+		dir(['~/Downloads/*']).each do |path|
+			if File.directory?(path) && dir("#{ path }/*").empty?
+				trash(path)
+			end
+		end
+	end
+
+	#
+	# Update all our Applications, brew, oh my fish and such
+	#
+	rule 'Updating Brew' do
+		`brew update`
+	end
+	rule 'Updating Brews' do
+		`brew upgrade -all`
+	end
+	rule 'Cleaning Brew' do
+		`brew cleanup`
+	end
+	rule 'Cleaning Brew Cask' do
+		`brew cask cleanup`
+	end
+	rule 'Updating Cask Applications' do
+		`brew cask update`
+	end
+	rule 'Updating gems ' do
+		`sudo gem update`
+	end
+	rule 'Update npm' do
+		`sudo npm -g update`
+	end
+	rule 'Update omf' do
+		'omf update'
+	end
+end
