@@ -32,10 +32,6 @@ echo  "Creating symlinks for zgen"
 
   echo "Creating symlink for custom files in ~/zgen_custom"
   ln -s $dir/zsh/zgen_custom/ ~/
-  echo "done"
-
-  echo "Reseting zgen"
-  zgen reset
 echo "done"
 
 # create symlink for the rules.db file for maid
