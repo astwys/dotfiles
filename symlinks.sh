@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
@@ -38,6 +38,11 @@ echo "done"
 echo "Creating symlink for maid"
   echo "Creating symlink for rules.rb file in ~/.maid"
   ln -s $dir/maid/rules.rb ~/.maid/
+  echo "Creating symlink for maid launchagent in ~/Library/LaunchAgents/"
+  ln -s $dir/com.michaelbartl.maid.plist ~/Library/LaunchAgents/
+  echo "done"
+  echo "Loading maid launchagent"
+  launchctl load com.michaelbartl.maid.plist
 echo "done"
 
 # create symlink for the hammerspoon files
