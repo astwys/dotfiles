@@ -7,4 +7,6 @@
 [credential]
 	helper = osxkeychain
 [core]
-	editor = emacs
+	editor = subl -n -w
+[gui]
+	recentrepo = /Users/michael/sandbox/Garlic

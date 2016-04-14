@@ -1,10 +1,10 @@
 Maid.rules do
 	rule 'compressed' do
-		move(dir('~/Downloads/*.{dmg,zip,pkg,tar,iso,7z,b1}'), mkdir('~/Downloads/Compressed'))
+		move(dir('~/Downloads/*.{dmg,zip,pkg,tar,iso,7z,b1,rar}'), mkdir('~/Downloads/Compressed'))
 	end
 
 	rule 'images' do
-		move(dir('~/Downloads/*.{jpg,jpeg,png,PNG,JPG}'), mkdir('~/Downloads/Images'))
+		move(dir('~/Downloads/*.{jpg,jpeg,png,PNG,JPG,MOV}'), mkdir('~/Downloads/Images'))
 	end
 
 	rule 'apps' do
