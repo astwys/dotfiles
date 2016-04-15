@@ -14,3 +14,6 @@
   alias sqlstop="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server stop"
   alias sqlreload="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server restart"
   alias sqlstatus="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server status"
+
+#weather
+	alias weather="curl http://wttr.in/vienna"
