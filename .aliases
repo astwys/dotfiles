@@ -16,4 +16,4 @@
   alias sqlstatus="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server status"
 
 #weather
-	alias weather="curl http://wttr.in/vienna"
+	alias weather="curl http://wttr.in"

@@ -21,6 +21,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/python
   zgen oh-my-zsh plugins/sublime
+  zgen oh-my-zsh plugins/colored-man-pages
 
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load djui/alias-tips
@@ -48,11 +49,11 @@ fi
 auto-ls () { echo $P; ls; }
 chpwd_functions=( auto-ls $chpwd_functions )
 
-#start autosuggestion service
+# start autosuggestion service
 autosuggest_start
 
-COMPLETION_WAITING_DOTS="true"
+#thefuck plugin
+eval $(thefuck --alias)
 
 export JAVA_HOME=/usr
-
 export PATH=$JAVA_HOME/bin:$PATH
