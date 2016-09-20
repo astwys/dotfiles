@@ -34,6 +34,11 @@ echo  "Creating symlinks for zgen"
   ln -s $dir/zsh/zgen_custom/ ~/
 echo "done"
 
+# create symlink for tmux configuration
+echo "Creating symlink for tmux"
+  ln -s $dir/tmux/.tmux.conf ~/
+echo "done"
+
 # create symlink for the rules.db file for maid
 echo "Creating symlink for maid"
   echo "Creating symlink for rules.rb file in ~/.maid"

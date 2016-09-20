@@ -46,7 +46,7 @@ if ! zgen saved; then
 fi
 
 # Automatically list directory contents on `cd`.
-auto-ls () { echo $P; ls; }
+auto-ls () { echo $P; exa; }
 chpwd_functions=( auto-ls $chpwd_functions )
 
 # start autosuggestion service
@@ -56,4 +56,5 @@ autosuggest_start
 eval $(thefuck --alias)
 
 export JAVA_HOME=/usr
-export PATH=$JAVA_HOME/bin:$PATH
+export GOPATH=/usr/local/bin
+export PATH=$JAVA_HOME/bin:$GOPATH:$PATH
