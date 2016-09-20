@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>Melodie</string>
+	<key>artistName</key>
+	<string>CRO</string>
+	<key>coverURL</key>
+	<string>https://lastfm-img2.akamaized.net/i/u/300x300/8dfbad4b46d04eb9ceb10ead0d3eea0e.png</string>
+	<key>currentPosition</key>
+	<string>19,.406.999.588.013</string>
+	<key>songDuration</key>
+	<string>195.548</string>
+	<key>songName</key>
+	<string>Traum</string>
+</dict>
+</plist>
