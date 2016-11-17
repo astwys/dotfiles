@@ -1,9 +1,9 @@
 #load zgen
-source ~/zgen/zgen.zsh
-source dnvm.sh
+source ~/.zgen/zgen.zsh
+# source dnvm.sh
 
 source ~/.aliases
-source ~/zgen_custom/zsh-autosuggestions/dist/autosuggestions.zsh
+source ~/.zgen_custom/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #check if there is no init script
 if ! zgen saved; then
@@ -27,14 +27,14 @@ if ! zgen saved; then
   zgen load djui/alias-tips
   zgen load voronkovich/gitignore.plugin.zsh
 
-  zgen load ~/zgen_custom/enhancd/zsh
+  zgen load ~/.zgen_custom/enhancd/zsh
 
   #completion
   zgen load zsh-users/zsh-completions src
 
   #theme
   #zgen load oskarkrawczyk/honukai-iterm-zsh honukai
-  zgen load ~/zgen_custom/honukai
+  zgen load ~/.zgen_custom/honukai
 
   #update zgen / plugins
   zgen load unixorn/autoupdate-zgen
@@ -46,15 +46,17 @@ if ! zgen saved; then
 fi
 
 # Automatically list directory contents on `cd`.
-auto-ls () { echo $P; exa; }
+auto-ls () { echo $P; ls; }
 chpwd_functions=( auto-ls $chpwd_functions )
 
 # start autosuggestion service
-autosuggest_start
+#autosuggest_start
 
 #thefuck plugin
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 
-export JAVA_HOME=/usr
-export GOPATH=/usr/local/bin
-export PATH=$JAVA_HOME/bin:$GOPATH:$PATH
+# export JAVA_HOME=/usr/
+# export GOPATH=/usr/local/bin
+# export PATH=$JAVA_HOME/bin:$GOPATH:$PATH
+
+# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin

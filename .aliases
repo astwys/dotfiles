@@ -16,7 +16,11 @@
   alias sqlstatus="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server status"
 
 #postgresql
-	alias postgresstart="postgres -D /usr/local/var/postgres"
+  alias postgresstart="postgres -D /usr/local/var/postgres"
 
 #weather
-	alias weather="curl http://wttr.in"
+  alias weather="curl http://wttr.in"
+
+#docker
+  alias dockerstart="docker-machine start default && eval $(docker-machine env default)"
+  alias dockerstop="docker-machine stop default"

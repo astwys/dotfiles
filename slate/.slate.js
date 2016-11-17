@@ -7,16 +7,16 @@ slate.configAll({
 	// "windowHintsSpread": true
 });
 
-// var moveLeft = slate.operation("push", {
-// 	"direction": "left",
-// 	"style": "bar-resize:screenSizeX/2"
-// });
-var moveLeft = slate.operation("move", {
-	"x": "screenOriginX",
-	"y": "screenOriginY + 35",
-	"width": "screenSizeX/2",
-	"height": "screenSizeY-35"
+var moveLeft = slate.operation("push", {
+	"direction": "left",
+	"style": "bar-resize:screenSizeX/2"
 });
+// var moveLeft = slate.operation("move", {
+// 	"x": "screenOriginX",
+// 	"y": "screenOriginY + 35",
+// 	"width": "screenSizeX/2",
+// 	"height": "screenSizeY-35"
+// });
 slate.bind("a:alt;shift", function(win) {
 	win.doOperation(moveLeft);
 });
@@ -107,8 +107,8 @@ slate.bind("s:alt;shift", function(win) {
 // });
 var fullscreen = slate.operation("move", {
 	"x": "screenOriginX",
-	// "y" : "screenOriginY",
-	"y": "screenOriginY + 35",
+	"y" : "screenOriginY",
+	// "y": "screenOriginY + 35",
   	"width" : "screenSizeX",
   	"height" : "screenSizeY"
 });
@@ -260,16 +260,16 @@ slate.bind("h:alt;shift", function(win) {
 });
 
 
-var grid = slate.operation("grid", {
-	"grids": {
-		"1440x900": {
-			"width": 8,
-			"height": 6
-		}
-	},
-	padding: 6
-});
-slate.bind("space:shift", grid);
+// var grid = slate.operation("grid", {
+// 	"grids": {
+// 		"1440x900": {
+// 			"width": 8,
+// 			"height": 6
+// 		}
+// 	},
+// 	padding: 6
+// });
+// slate.bind("space:shift", grid);
 
 
 var hint = slate.operation("hint", {

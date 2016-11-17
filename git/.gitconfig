@@ -8,6 +8,7 @@
 	helper = osxkeychain
 [core]
 	editor = subl -n -w
+	excludesfile = /Users/michael/.gitignore_global
 [gui]
 	recentrepo = /Users/michael/sandbox/Garlic
 [alias]
@@ -19,3 +20,10 @@
 	go = checkout
 	newbranch = checkout -b
 	branches = branch -a
+	up = pull --rebase --autostash
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
