@@ -3692,9 +3692,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>438 226 563 600 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>369 498 918 381 0 0 1440 900 </string>
+	<string>369 453 1018 447 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>227 186 970 575 0 0 1440 900 </string>
+	<string>68 237 970 598 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_F693CEC1-91E4-4CE2-9E81-86C72F81C879</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -8713,13 +8713,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.10588235294117647</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.10588235294117647</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.10588235294117647</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -8758,7 +8758,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/michael</string>
 		</dict>
@@ -9858,7 +9858,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-02T18:54:31Z</date>
+	<date>2017-07-03T19:46:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -9886,7 +9886,7 @@
 	<key>TerminalMargin</key>
 	<integer>25</integer>
 	<key>TerminalVMargin</key>
-	<integer>25</integer>
+	<integer>10</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
@@ -9919,7 +9919,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.20170630-nightly</string>
+	<string>3.1.20170703-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

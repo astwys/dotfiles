@@ -13,10 +13,6 @@ chpwd_functions=( auto-ls $chpwd_functions )
 #autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-
-# docker
-eval $(docker-machine env)
-
 # node_modules
 export PATH="$(npm bin):$PATH"
 
