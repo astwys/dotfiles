@@ -119,7 +119,7 @@ slate.bind("f:alt;shift", function(win) {
 
 
 var nudgeRight = slate.operation("nudge", {
-	"x": "+10%",
+	"x": "+5%",
 	"y": "+0"
 });
 slate.bind("right:ctrl;alt;cmd", function(win) {
@@ -128,7 +128,7 @@ slate.bind("right:ctrl;alt;cmd", function(win) {
 
 
 var nudgeLeft = slate.operation("nudge", {
-	"x": "-10%",
+	"x": "-5%",
 	"y": "+0"
 });
 slate.bind("left:ctrl;alt;cmd", function(win) {
@@ -138,7 +138,7 @@ slate.bind("left:ctrl;alt;cmd", function(win) {
 
 var nudgeUp = slate.operation("nudge", {
 	"x": "+0",
-	"y": "-10%"
+	"y": "-5%"
 });
 slate.bind("up:ctrl;alt;cmd", function(win) {
 	win.doOperation(nudgeUp);
@@ -147,7 +147,7 @@ slate.bind("up:ctrl;alt;cmd", function(win) {
 
 var nudgeDown = slate.operation("nudge", {
 	"x": "+0",
-	"y": "+10%"
+	"y": "+5%"
 });
 slate.bind("down:ctrl;alt;cmd", function(win) {
 	win.doOperation(nudgeDown);
