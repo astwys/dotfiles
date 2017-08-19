@@ -1,13 +1,14 @@
 source ~/.antigenrc
 source ~/.aliases
+source ~/.spaceshiprc
+#source ~/.purerc
 
-# spaceship prompt
-SPACESHIP_DOCKER_SHOW=true
-# SPACESHIP_GIT_UNSTAGED='*'
-SPACESHIP_PROMPT_ADD_NEWLINE=true
+#zsh-autosuggest
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7"	
 
 # ls after cd
-auto-ls () { echo $P; ls; }
+#auto-ls () { echo $P; ls; }
+auto-ls () { ls; }
 chpwd_functions=( auto-ls $chpwd_functions )
 
 #autojump

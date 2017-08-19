@@ -8,3 +8,11 @@ finicky.onUrl(function(url, opts) {
         }
     }
 });
+
+finicky.onUrl(function(url, opts) {
+	if (url.match(/^https?:\/\/reddit\.com/)) {
+		return {
+			bundleIdentifier: 'com.google.Chrome'
+		}
+	}
+});

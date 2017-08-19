@@ -90,10 +90,14 @@ slate.bind("x:alt;shift", function(win) {
 
 
 var smallWin = slate.operation("move", {
-	"x": "screenOriginX + screenSizeX/6.9",
-	"y": "screenOriginY + screenSizeY/10",
-	"width": "screenSizeX * 0.7101449275",
-	"height": "screenSizeY * 0.8"
+	// "x": "screenOriginX + screenSizeX/6.9",
+	// "y": "screenOriginY + screenSizeY/10",
+	// "width": "screenSizeX * 0.7101449275",
+	// "height": "screenSizeY * 0.8"
+	"x": "screenOriginX + screenSizeX/6",
+	"y": "screenOriginY + screenSizeY/6",
+	"width": "screenSizeX/6 * 4",
+	"height": "screenSizeY/6 * 4"
 });
 slate.bind("s:alt;shift", function(win) {
 	win.doOperation(smallWin);
@@ -119,7 +123,7 @@ slate.bind("f:alt;shift", function(win) {
 
 
 var nudgeRight = slate.operation("nudge", {
-	"x": "+5%",
+	"x": "+2.5%",
 	"y": "+0"
 });
 slate.bind("right:ctrl;alt;cmd", function(win) {
@@ -128,7 +132,7 @@ slate.bind("right:ctrl;alt;cmd", function(win) {
 
 
 var nudgeLeft = slate.operation("nudge", {
-	"x": "-5%",
+	"x": "-2.5%",
 	"y": "+0"
 });
 slate.bind("left:ctrl;alt;cmd", function(win) {
@@ -138,7 +142,7 @@ slate.bind("left:ctrl;alt;cmd", function(win) {
 
 var nudgeUp = slate.operation("nudge", {
 	"x": "+0",
-	"y": "-5%"
+	"y": "-2.5%"
 });
 slate.bind("up:ctrl;alt;cmd", function(win) {
 	win.doOperation(nudgeUp);
@@ -147,7 +151,7 @@ slate.bind("up:ctrl;alt;cmd", function(win) {
 
 var nudgeDown = slate.operation("nudge", {
 	"x": "+0",
-	"y": "+5%"
+	"y": "+2.5%"
 });
 slate.bind("down:ctrl;alt;cmd", function(win) {
 	win.doOperation(nudgeDown);
@@ -156,7 +160,7 @@ slate.bind("down:ctrl;alt;cmd", function(win) {
 
 var resizeTopPos = slate.operation("resize", {
 	"width": "+0",
-	"height": "+10%",
+	"height": "+5%",
 	"anchor": "bottom-right"
 });
 slate.bind("up:ctrl;alt", function(win) {
@@ -166,7 +170,7 @@ slate.bind("up:ctrl;alt", function(win) {
 
 var resizeBottomPos = slate.operation("resize", {
 	"width": "+0",
-	"height": "+10%"
+	"height": "+5%"
 });
 slate.bind("down:alt;cmd", function(win) {
 	win.doOperation(resizeBottomPos);
@@ -174,7 +178,7 @@ slate.bind("down:alt;cmd", function(win) {
 
 
 var resizeRightPos = slate.operation("resize", {
-	"width": "+10%",
+	"width": "+5%",
 	"height": "+0"
 });
 slate.bind("right:alt;cmd", function(win) {
@@ -183,7 +187,7 @@ slate.bind("right:alt;cmd", function(win) {
 
 
 var resizeLeftPos = slate.operation("resize", {
-	"width": "+10%",
+	"width": "+5%",
 	"height": "+0",
 	"anchor": "bottom-right"
 });
@@ -194,7 +198,7 @@ slate.bind("left:ctrl;alt", function(win) {
 
 var resizeTopNeg = slate.operation("resize", {
 	"width": "+0",
-	"height": "-10%",
+	"height": "-5%",
 	"anchor": "bottom-right"
 });
 slate.bind("down:ctrl;alt", function(win) {
@@ -204,14 +208,14 @@ slate.bind("down:ctrl;alt", function(win) {
 
 var resizeBottomNeg = slate.operation("resize", {
 	"width": "+0",
-	"height": "-10%"
+	"height": "-5%"
 });
 slate.bind("up:alt;cmd", function(win) {
 	win.doOperation(resizeBottomNeg);
 });
 
 var resizeRightNeg = slate.operation("resize", {
-	"width": "-10%",
+	"width": "-5%",
 	"height": "+0"
 });
 slate.bind("left:alt;cmd", function(win) {
@@ -219,7 +223,7 @@ slate.bind("left:alt;cmd", function(win) {
 });
 
 var resizeLeftNeg = slate.operation("resize", {
-	"width": "-10%",
+	"width": "-5%",
 	"height": "+0",
 	"anchor": "bottom-right"
 });

@@ -9,24 +9,6 @@
   # alias go="git checkout"
   alias yolo="git commit -am '`curl -s http://whatthecommit.com/index.txt`'"
 
-#mysql server
-  alias sqlstart="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server start"
-  alias sqlstop="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server stop"
-  alias sqlreload="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server restart"
-  alias sqlstatus="sudo /Applications/XAMPP/xamppfiles/bin/mysql.server status"
-
-#postgresql
-  alias postgresstart="postgres -D /usr/local/var/postgres"
-
-#weather
-  alias weather="curl http://wttr.in"
-
-#docker
-  #alias dockerstart="docker-machine start default" #&& eval `docker-machine env default`"
-  #alias dockerstop="docker-machine stop default"
-
-#shpotify
-  alias sp="spotify"
-
-#todolist
-  alias t="todolist"
+#colorls
+  alias ls='colorls -sd -1'
+  alias lc='colorls -r'
