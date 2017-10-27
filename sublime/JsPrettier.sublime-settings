@@ -1,0 +1,13 @@
+{
+	"auto_format_on_save": true,
+	"prettier_options": {
+    	"printWidth": 80,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "semi": false,
+        "useTabs": true,
+        "tabWidth": 4
+	}
+}

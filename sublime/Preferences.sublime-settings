@@ -1,0 +1,27 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Pro (Filter Octagon) (SL).tmTheme",
+	"drag_text": false,
+	"draw_indent_guides": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Fira Code",
+	"font_size": 12,
+	"ignored_packages":
+	[
+	],
+	"line_padding_bottom:": 4,
+	"line_padding_top": 4,
+	"margin": 8,
+	"monokai_pro_highlight_open_folders": true,
+	"monokai_pro_minimal": true,
+	"monokai_pro_sidebar_lighter": true,
+	"monokai_pro_small_scrollbar": true,
+	"rulers":
+	[
+		100
+	],
+	"scroll_past_end": true,
+	"shift_tab_unindent": true,
+	"skin": "DA UI/Elegant",
+	"theme": "Monokai Pro (Filter Octagon).sublime-theme",
+	"vintage_start_in_command_mode": true
+}
