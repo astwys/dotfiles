@@ -18,4 +18,4 @@ chpwd_functions=( auto-ls $chpwd_functions )
 export PATH="$(npm bin):$PATH"
 
 # yarn
-export PATH="$PATH:`yarn global bin`"
+export PATH="$PATH:`yarn global bin`:./node_modules/.bin"
