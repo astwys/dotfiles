@@ -1,0 +1,82 @@
+{
+  	"title": "Bracket Remapping",
+	"rules": [
+		{
+			"description": "Change option+shift+8/9 to '['/']'",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "8",
+						"modifiers": {
+							"mandatory": [
+								"shift",
+								"option"
+							]
+						}
+					},
+					"to": [{
+						"key_code": "5",
+						"modifiers": [
+							"option"
+						]
+					}]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "9",
+						"modifiers": {
+							"mandatory": [
+								"shift",
+								"option"
+							]
+						}
+					},
+					"to": [{
+						"key_code": "6",
+						"modifiers": [
+							"option"
+						]}
+					]
+				}
+			]
+		},
+		{
+			"description": "Change option+0/ß to </>",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "0",
+						"modifiers": {
+							"mandatory": [
+								"option"
+							]
+						}
+					},
+					"to": [{
+						"key_code": "grave_accent_and_tilde"
+					}]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "hyphen",
+						"modifiers": {
+							"mandatory": [
+								"option"
+							]
+						}
+					},
+					"to": [{
+						"key_code": "grave_accent_and_tilde",
+						"modifiers": [
+							"shift"
+						]
+					}]
+				}
+			]
+		}
+	]
+}

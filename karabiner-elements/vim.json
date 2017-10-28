@@ -1,0 +1,376 @@
+{
+	"title": "Remap ctrl+hjkl to arrow keys",
+	"rules": [
+		{
+			"description": "Vim Navigation",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow"
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow"
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow"
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Vim Navigation Extended (option/cmd)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn", "option"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["option"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn", "command"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["command"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn", "option"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["option"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn", "command"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["command"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn", "option"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": ["option"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn", "command"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": ["command"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn", "option"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": ["option"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn", "command"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": ["command"]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Vim Navigation Selecting (option/cmd)",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": ["shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": ["shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn", "option", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["option", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": ["fn", "command", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": ["command", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn", "option", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["option", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": ["fn", "command", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": ["command", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn", "option", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": ["option", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": ["fn", "command", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": ["command", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn", "option", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": ["option", "shift"]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": ["fn", "command", "shift"]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": ["command", "shift"]
+						}
+					]
+				}
+			]
+		}
+	]
+}

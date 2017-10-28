@@ -1,0 +1,24 @@
+{
+	"title": "Keyboard Remapping",
+	"rules": [
+		{
+			"description": "option+ö to -",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "semicolon",
+						"modifiers": {
+							"mandatory": [
+								"option"
+							]
+						}
+					},
+					"to": [{
+						"key_code": "slash"
+					}]
+				}
+			]
+		}
+	]
+}
