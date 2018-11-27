@@ -1,0 +1,5 @@
+alias vim="nvim"
+alias ls="ls -Fh"
+alias git="hub"
+alias startstack='sed -e "s/DOCKER_IP/"\""$(docker-machine ls | egrep -o '\''tcp://[0-9.]+'\'' | sed -e '\''s/tcp:\/\///g'\'')"\""/g" docker-compose.dev.yml | COMPOSE_HTTP_TIMEOUT=100000000 docker-compose -f - up'
+alias ev='eval "$(docker-machine env prl-dev)"'
